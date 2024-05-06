@@ -23,7 +23,7 @@ functions as a machine that is a local DNS server.
 **Host**: **‘v.v@192.168.1.101’**  - \
 Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, installed and ‘**kubectl’** for the cluster configuration.
 
-**<span style="text-decoration:underline;">2 1.1. Deployment process of the VM’s:**
+#### 1.1. Deployment process of the VM’s:
 
 ***Note that I intended to use a local domain of ‘lab2.cloud’ for all of the machines for an easier involvement with them and as a practice to make the IPs static and change dns in the machines, so I installed PiHole on one of the machines to act as a local dns server for all of the machines to resolve the ip in the local network through it.**
 
@@ -43,7 +43,7 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **1.1.7.** Verification that all of the VM’s are running ‘Docker’ engine 24.0.9 and the user has privilege for docker commands without ‘**sudo**’ command or ‘**root**’ privileges.
 
-**<span style="text-decoration:underline;">2. Creation of the cluster:</span>**
+#### 2. Creation of the cluster:
 
 **2.1.** Installation of **‘RKE’** on **‘v.v@192.168.1.101**, giving it exec property and adding it to the ‘**$PATH**’ variable.
 
