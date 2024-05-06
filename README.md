@@ -87,7 +87,7 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 ***note that for ease of use I have used the kube-prometheus-stack wchich contains Kubernetes manifests, Grafana dashboards, and Prometheus rules combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring**
 
-**3.1.** Use **Helm3** to deploy [kube-prometheus-stack]([https://artifacthub.io/packages/helm/bitnami/mongodb](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack)) on the k8s cluster, preferably in its own NS (i.e in **monitoring** namespace).
+**3.1.** Use **Helm3** to deploy [kube-prometheus-stack](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack) on the k8s cluster, preferably in its own NS (i.e in **monitoring** namespace).
 
 **3.1.1.** Create a custom values **.yaml** for the **Helm3** deployment and specfiy there that the pods for **Grafana**,**Prometheus** will run under **NodePort** to be able to connect to them locally, optionally enable **ingress** through the **values.yaml** so that the UI's of the deployments will be accesible through a ascii address.
 
