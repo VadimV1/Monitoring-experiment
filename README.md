@@ -118,4 +118,11 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **5.2.** Use the official guide of [MongoDB Documentation](https://www.mongodb.com/docs/manual/), the [query functions of **Prometheus**](https://prometheus.io/docs/prometheus/latest/querying/functions/) and guides on the web to be able to use the appropriate **scraping variables** for your dashboard visualization.
 
+# Photos:
+![Screenshot from 2024-05-06 17-56-07](https://github.com/VadimV1/Monitoring-experiment/assets/20540663/6bba1991-7e9a-406e-81ab-433f62708b64)
+![Screenshot from 2024-05-06 17-55-56](https://github.com/VadimV1/Monitoring-experiment/assets/20540663/4e2a853a-114a-460f-b472-33af3b2929cd)
+
+
+
+
 
