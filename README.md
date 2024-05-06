@@ -62,3 +62,30 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 **1.2.6.** Proceeding to copy the ‘**kube_config_cluster.yml**’ file that was created after ‘**RKE**’ runtime into the /.kube directory.
 
 **1.2.7.** Running the ```kubectl get nodes``` command to see that all of the 3 nodes in the cluster are at ‘**READY**’ state.
+
+#### 1.3. Installation of an NFS server provisioner:
+
+***note that the deployment of DB's, server etc, require a presisntent volume by default in the helm chart (mostly) so in order not to waste time on making storage classes, PV's and PVC's for each app I've decided that deploying a nfs server that will provision dynamically the PV's for the PVC's will be more efficent**
+
+**1.3.1** Use **Helm3** to deploy [nfs-server-provisioner](https://artifacthub.io/packages/helm/kvaps/nfs-server-provisioner) on the k8s cluster, preferably in its own NS.
+
+***note that the process of installation/deployment/usage is the same for both of the local cluster and 'Linode' cluster from now on**
+
+### 2. Installation of MongoDB:  
+
+**2.1.** Use **Helm3** to deploy [MongoDB](https://artifacthub.io/packages/helm/bitnami/mongodb) on the k8s cluster, preferably in its own NS (i.e in **mongodb** namespace).
+
+**2.1.1.** Create a custom values **.yaml** for the **Helm3** deployment and specfiy there that the pod will run under **NodePort** to be able to connect to the DB across the cluster.
+
+**2.1.2**  Create a namespace for MongoDB with ```kubectl create ns *your ns name*```.
+
+**2.1.2** Run ```helm install ``` with the specifed **MOngoDB** repo, the desired NS and the custom values file.
+
+**2.2.** After the installation **MongoDB** should be accessible through [IP]:[nodePort]
+
+
+
+
+
+
+
