@@ -91,7 +91,7 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **3.1.1.** Create a custom values **.yaml** for the **Helm3** deployment and specfiy there that the pods for **Grafana**,**Prometheus** will run under **NodePort** to be able to connect to them locally, optionally enable **ingress** through the **values.yaml** so that the UI's of the deployments will be accesible through a ascii address.
 
-**3.1.2**  Create a namespace for MongoDB with ```kubectl create ns *your ns name*```.
+**3.1.2**  Create a namespace for **kube-prometheus-stack** with ```kubectl create ns *your ns name*```.
 
 **3.1.2** Run ```helm install ``` with the specifed **kube-prometheus-stack** repo, the desired NS and the custom values file.
 
