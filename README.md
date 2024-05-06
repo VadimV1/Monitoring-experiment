@@ -29,13 +29,13 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **1.1.1.** Deployment of the 5 VM’s consisted of  installing **Ubuntu 20.04** as their main os.
 
-**1.1.2.** After finishing the installment process of the 4 VM’s, the procedure required the additional installment of ‘**vim**’, ‘**net-tools’**, ’**openssh-server**’ and enabling the ‘**ssh**’ process with ```systemctl enable ssh```.
+**1.1.2.** After finishing the installment process of the 4 VM’s, the procedure required the additional installation of ‘**vim**’, ‘**net-tools’**, ’**openssh-server**’ and enabling the ‘**ssh**’ process with ```systemctl enable ssh```.
 
-**1.1.3.** Proceeding on  **‘v.v@192.168.1.101** and making an SSH key for distribution across the 4 VM’s with the ‘**ssh-keygen**’ command.
+**1.1.3.** Proceeding on  **‘v.v@192.168.1.101** and making an SSH key for distribution across the 4 VM’s with the '''ssh-keygen'''.
 
-**1.1.4.** In precedence to the previous step, commence distribution of the ssh key across the 4 VM’s with the ‘**ssh-copy-id**’ command.
+**1.1.4.** In precedence to the previous step, commence distribution of the ssh key across the 4 VM’s with the '''ssh-copy-id'''.
 
-**1.1.5.** After the ssh key distribution, the ‘**scp**’ command was used  to send to bash scripts, ‘**make_ip_static.sh**’ and ‘**docker_install.sh**’ across the VM’s.
+**1.1.5.** After the ssh key distribution, the '''scp'''  was used to send to bash scripts, ‘**make_ip_static.sh**’ and ‘**docker_install.sh**’ across the VM’s.
 
 **1.1.6.** Running the two bash scripts to make the ip of the machine static and installing ‘Docker’ engine with 24.0.9 version. 
 
@@ -57,8 +57,8 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **2.4.** Creation of **‘cluster.yml’** file for ‘**RKE**’.
 
-**2.5.** Deployment of the cluster with ‘**rke up –config cluster.yml**’ command.
+**2.5.** Deployment of the cluster with '''rke up –config cluster.yml'''.
 
 **2.6.** Proceeding to copy the ‘**kube_config_cluster.yml**’ file that was created after ‘**RKE**’ runtime into the /.kube directory.
 
-**2.7.** Running the **‘kubectl get nodes**’ command to see that all of the 3 nodes in the cluster are at ‘**READY**’ state.
+**2.7.** Running the '''kubectl get nodes''' command to see that all of the 3 nodes in the cluster are at ‘**READY**’ state.
