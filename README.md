@@ -110,7 +110,13 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 **4.2.** After the installation, the **Target** tab in the **Prometheus** UI should be able to see the newly added exporter or if you configured it with nodePort, the interface of the scraper may also be accessible.
 
 
+### 5. Grafana dashboard initialization:
 
+**5.1.** After your **Grafana** can be accessed through the browser, either with **NodePort** or **Ingress**, you will need to login to the UI with **username**:```admin```, **password**:```prom-operator```.
+
+**5.2.** Now you can enter the **Dashboard** section of **Grafana** and start creating your own dashboards using the appropriate **scraping variables** of the exporter.
+
+**5.2.** Use the official guide of [MongoDB Documentation](https://www.mongodb.com/docs/manual/), the [query functions of **Prometheus**](https://prometheus.io/docs/prometheus/latest/querying/functions/) and guides on the web to be able to use the appropriate **scraping variables** for your dashboard visualization.
 
 
 
