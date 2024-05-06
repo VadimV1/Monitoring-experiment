@@ -1,1 +1,1 @@
-This Branch Contains teh custom files used in the process for helm installations.
+This Branch Contains the custom values.yaml files used in the process for helm installations.
