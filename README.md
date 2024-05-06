@@ -101,7 +101,9 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **4.1.** Use **Helm3** to deploy [prometheus-mongodb-exporter](https://artifacthub.io/packages/helm/prometheus-community/prometheus-mongodb-exporter) on the k8s cluster, preferably in the **Default** namespace, or the same namespace that you specefied for **Step 3**.
 
-***note the by default prometheus has limited access for namespace in which it can pull data from the exporters through the servicemonitors, that is why I specified the 'Default' or the same NS that the 'Prometheus' was deployed, If by any chance you need to allow 'Prometheus' to be able so scrape other NS that is doesnt have persmission, please check [Monitoring additional namespaces](https://github.com/prometheus-operator/kube-prometheus/blob/main/docs/customizations/monitoring-additional-namespaces.md)**
+***note the by default prometheus has limited access for namespace in which it can pull data from the exporters through the servicemonitors, that is why I specified the 'Default' or the same NS that the 'Prometheus' was deployed, If by any chance you need to allow 'Prometheus' to be able so scrape other NS that is doesnt have persmission, please check [Monitoring additional namespaces](https://github.com/prometheus-operator/kube-prometheus/blob/main/docs/customizations/monitoring-additional-namespaces.md)**.
+
+**4.1.1.** Create a custom values **.yaml** for the **Helm3** deployment and specfiy there that the serviceMonitor for **Prometheus** will be enabled and specify under **serviceMonitor.additionalLabels.release** the same **release** the the prometheus cluster's **servicemonitor**'s have in their configurations (Use ```kubectl get servicemonitor -n [Prometheus NS]``` and then ```kubectl get servicemonitor [serviceMonitor of some exporteer] -n [Prometheus NS] -o yaml``` to see the release under the label, so your new exporeter will be available to the **Prometheus** scraper ).Optionally run the exporter pod under **NodePort** to be able to connect to them locally for debugging.
 
 
 
