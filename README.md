@@ -43,22 +43,22 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **1.1.7.** Verification that all of the VM’s are running ‘Docker’ engine 24.0.9 and the user has privilege for docker commands without ‘**sudo**’ command or ‘**root**’ privileges.
 
-#### 2. Creation of the cluster:
+#### 1.2. Creation of the cluster:
 
-**2.1.** Installation of **‘RKE’** on **‘v.v@192.168.1.101**, giving it exec property and adding it to the ‘**$PATH**’ variable.
+**1.2.1.** Installation of **‘RKE’** on **‘v.v@192.168.1.101**, giving it exec property and adding it to the ‘**$PATH**’ variable.
 
 **Url:** [RKE installation guide](https://github.com/rancher/rke)
 
-**2.2.** Installation of **‘kubectl’** on **‘v.v@192.168.1.101’**, giving it exec property and adding it to the ‘**$PATH**’ variable.
+**1.2.2.** Installation of **‘kubectl’** on **‘v.v@192.168.1.101’**, giving it exec property and adding it to the ‘**$PATH**’ variable.
 
 **Url:** [kubectl installation guide](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-using-native-package-management) 
 
-**2.3.** Creation of a directory for the Cluster config files on **‘v.v@192.168.1.101’.**
+**1.2.3.** Creation of a directory for the Cluster config files on **‘v.v@192.168.1.101’.**
 
-**2.4.** Creation of **‘cluster.yml’** file for ‘**RKE**’.
+**1.2.4.** Creation of **‘cluster.yml’** file for ‘**RKE**’.
 
-**2.5.** Deployment of the cluster with ```rke up –config cluster.yml```.
+**1.2.5.** Deployment of the cluster with ```rke up –config cluster.yml```.
 
-**2.6.** Proceeding to copy the ‘**kube_config_cluster.yml**’ file that was created after ‘**RKE**’ runtime into the /.kube directory.
+**1.2.6.** Proceeding to copy the ‘**kube_config_cluster.yml**’ file that was created after ‘**RKE**’ runtime into the /.kube directory.
 
-**2.7.** Running the ```kubectl get nodes``` command to see that all of the 3 nodes in the cluster are at ‘**READY**’ state.
+**1.2.7.** Running the ```kubectl get nodes``` command to see that all of the 3 nodes in the cluster are at ‘**READY**’ state.
