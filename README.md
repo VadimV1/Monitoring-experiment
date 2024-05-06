@@ -122,8 +122,6 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 ![Screenshot from 2024-05-06 17-56-07](https://github.com/VadimV1/Monitoring-experiment/assets/20540663/6bba1991-7e9a-406e-81ab-433f62708b64)
 ![Screenshot from 2024-05-06 17-55-56](https://github.com/VadimV1/Monitoring-experiment/assets/20540663/4e2a853a-114a-460f-b472-33af3b2929cd)
 
-![Screenshot from 2024-05-05 19-27-35](https://github.com/VadimV1/Monitoring-experiment/assets/20540663/e73d96df-c183-49f4-ad34-1085d48590ab)
-
 
 
 
