@@ -2,7 +2,7 @@
 
 ## Monitoring experiment with k8s cluster locally and on 'Linode' with MongoDB, Prometheus, Graphana.
 
-**<span style="text-decoration:underline;">1. Local lab environment configurations:</span>**
+### 1. Local lab environment configurations:
 
 **VM 1:** **‘k8s-master@192.168.1.139’ -**
 
@@ -23,7 +23,7 @@ functions as a machine that is a local DNS server.
 **Host**: **‘v.v@192.168.1.101’**  - \
 Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, installed and ‘**kubectl’** for the cluster configuration.
 
-### 1.1. Deployment process of the VM’s:
+**<span style="text-decoration:underline;">2 1.1. Deployment process of the VM’s:**
 
 ***Note that I intended to use a local domain of ‘lab2.cloud’ for all of the machines for an easier involvement with them and as a practice to make the IPs static and change dns in the machines, so I installed PiHole on one of the machines to act as a local dns server for all of the machines to resolve the ip in the local network through it.**
 
