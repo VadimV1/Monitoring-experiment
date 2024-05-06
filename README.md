@@ -29,7 +29,7 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **1.1.1.** Deployment of the 5 VM’s consisted of  installing **Ubuntu 20.04** as their main os.
 
-**1.1.2.** After finishing the installment process of the 4 VM’s, the procedure required the additional installment of ‘**vim**’, ‘**net-tools’**, ’**openssh-server**’ and enabling the ‘ssh’ process with ‘**systemctl enable ssh**’.
+**1.1.2.** After finishing the installment process of the 4 VM’s, the procedure required the additional installment of ‘**vim**’, ‘**net-tools’**, ’**openssh-server**’ and enabling the ‘ssh’ process with '''systemctl enable ssh'''.
 
 **1.1.3.** Proceeding on  **‘v.v@192.168.1.101** and making an SSH key for distribution across the 4 VM’s with the ‘**ssh-keygen**’ command.
 
