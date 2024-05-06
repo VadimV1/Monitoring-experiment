@@ -16,10 +16,6 @@ functions as the master/control node with the roles: **worker**
 
 functions as the master/control node with the roles: **worker**
 
-**VM 4:** **‘rancher@192.168.1.144’ -**
-
-functions as a machine that deploys a container with **rancher UI** web app with **docker compose.**
-
 **VM 5: ‘DNS@192.168.1.143’ -**
 
 functions as a machine that is a local DNS server.
