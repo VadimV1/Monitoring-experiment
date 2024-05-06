@@ -1,8 +1,8 @@
 # Monitoring-experiment
 
-## Monitoring experiment with k8s cluster with MongoDB, Prometheus, Graphana.
+## Monitoring experiment with k8s cluster locally and on 'Linode' with MongoDB, Prometheus, Graphana.
 
-**<span style="text-decoration:underline;">1. Lab environment configurations:</span>**
+**<span style="text-decoration:underline;">1. Local lab environment configurations:</span>**
 
 **VM 1:** **‘k8s-master@192.168.1.139’ -**
 
