@@ -1,7 +1,0 @@
-serviceMonitor:
-  enabled: true
-  additionalLabels: 
-    release: #enter the release of one of the 'service monitor'
-    # In my case I used 'kube-prometheus-stack'
-mongodb:
-  uri: #ENTER here your URI of the mongoDB
