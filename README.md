@@ -97,8 +97,11 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **3.2.** After the installation **Grafana** and **Prometheus** should be accessible through **[IP]**:**[nodePort]** or **[address]**:**[port]** if you used **ingerss**.
 
+### 4. Installation of a MongoDB exporter:
 
+**4.1.** Use **Helm3** to deploy [prometheus-mongodb-exporter](https://artifacthub.io/packages/helm/prometheus-community/prometheus-mongodb-exporter) on the k8s cluster, preferably in the **Default** namespace, or the same namespace that you specefied for **Step 3**.
 
+***note the by default prometheus has limited access for namespace in which it can pull data from the exporters through the servicemonitors, that is why I specified the 'Default' or the same NS that the 'Prometheus' was deployed, If by any chance you need to allow 'Prometheus' to be able so scrape other NS that is doesnt have persmission, please check [Monitoring additional namespaces](https://github.com/prometheus-operator/kube-prometheus/blob/main/docs/customizations/monitoring-additional-namespaces.md)**
 
 
 
