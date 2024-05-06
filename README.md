@@ -81,7 +81,7 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **2.1.2** Run ```helm install ``` with the specifed **MongoDB** repo, the desired NS and the custom values file.
 
-**2.2.** After the installation **MongoDB** should be accessible through [IP]:[nodePort]
+**2.2.** After the installation **MongoDB** should be accessible through **[IP]**:**[nodePort]**
 
 ### 3. Installation of Prometheus:
 
@@ -95,7 +95,7 @@ Personal computer that runs the 5 VM’s, has ‘**RKE**’, ‘**Helm3**’, in
 
 **3.1.2** Run ```helm install ``` with the specifed **kube-prometheus-stack** repo, the desired NS and the custom values file.
 
-**3.2.** After the installation **Grafana** and **Prometheus** should be accessible through [IP]:[nodePort] or [address:port] if you used **ingerss**.
+**3.2.** After the installation **Grafana** and **Prometheus** should be accessible through **[IP]**:**[nodePort]** or **[address]**:**[port]** if you used **ingerss**.
 
 
 
